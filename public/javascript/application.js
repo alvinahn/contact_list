@@ -44,6 +44,7 @@ $(document).ready(function() {
 
   $('.button2').on('click', function(){
     $('td').removeClass('highlight');
+    $('#search_input').val('');
   });
 
 });
