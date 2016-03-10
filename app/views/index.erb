@@ -1,1 +1,44 @@
-<h1>Home Page</h1>
+<div class="row center">
+  <div class="col s12">
+    <h1 class="title">Contact List</h1>
+  </div>
+</div>
+
+<div class="row">
+<div class="col s6 contact-table rounded">
+  <table>
+    <h5 id="title1">Contact List</h5>
+    <thead>
+      <tr>
+        <th><strong>Name</strong></th>
+        <th class="email-column"><strong>Email</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="contact-row">
+        <td id="name-column"></td>
+        <td class="email-column"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="col s6">
+  <form class="contact-new rounded">
+    <h5>Create New Contact</h5>
+    <input type=text id="new_name" placeholder="Name">
+    <input type=text id="new_email" placeholder="Email">
+    <a class="button" id="form_submit">Submit</a>
+  </form>
+</div>
+
+<div class="col s6">
+  <div class="contact-search rounded">
+    <h5>Search Contact</h5>
+    <input type=text id="search_input" placeholder="Search">
+    <a class= "button button2">Clear</a>
+    <a class= "button" id="search_submit">Submit</a>
+  </div>
+</div>
+
+</div> <!-- /row -->

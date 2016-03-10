@@ -6,18 +6,26 @@
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
   <link rel="stylesheet" href="/stylesheets/normalize.css">
   <!--
     application.css is where you put your styles
   -->
   <link rel="stylesheet" href="/stylesheets/application.css">
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="/javascript/application.js"></script>
-
   <title></title>
 </head>
 <body>
-  <%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script src="/javascript/application.js"></script>
 </body>
 </html>
