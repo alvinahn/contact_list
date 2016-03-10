@@ -1,6 +1,3 @@
-require "sinatra/json"
-require 'byebug'
-
 # Homepage (Root path)
 get '/' do
   erb :index
