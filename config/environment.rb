@@ -1,10 +1,11 @@
 require 'rubygems'
 require 'bundler/setup'
-
+require 'byebug'
 require 'active_support/all'
 
 # Load Sinatra Framework (with AR)
 require 'sinatra'
+require 'sinatra/cross_origin'
 require 'sinatra/activerecord'
 require 'sinatra/contrib/all' # Requires cookies, among other things
 
@@ -19,6 +20,7 @@ configure do
   set :server, :puma
 
   enable :sessions
+  enable :cross_origin
   set :session_secret, ENV['SESSION_KEY'] || 'lighthouselabssecret'
 
   set :views, File.join(Sinatra::Application.root, "app", "views")
