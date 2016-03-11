@@ -12,7 +12,11 @@ configure do
   else
     set :database, {
       adapter: "postgresql",
-      database: ENV['DATABASE_URL']
+      database: 'dd12op9tglj0g9',
+      username: 'qvbakyucigozjt',
+      port: '5432',
+      password: 'LiKQHML2SDQ4Waq7A0xzM-_mHb',
+      host: 'ec2-54-83-29-133.compute-1.amazonaws.com'
     }
   end
 #hi
